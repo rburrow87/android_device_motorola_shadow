@@ -77,10 +77,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
 # Inherit from shadow device
-$(call inherit-product, device/motorola/shadow/device.mk)
+$(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := cm_shadow
+PRODUCT_NAME := aokp_shadow
 PRODUCT_DEVICE := shadow
 PRODUCT_BRAND := verizon
 PRODUCT_MODEL := DROIDX
